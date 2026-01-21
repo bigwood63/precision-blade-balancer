@@ -116,7 +116,7 @@ with col_output:
             
             # 현실적인 판정 로직 (비즈니스 문구 반영)
             if mag > 10.0:
-                st.error(f"❌ **Critical Unbalance**\n\n허용 범위를 초과했습니다. 진동으로 인한 베어링 손상이 우려되오니 즉시 정밀 최적화 배열표를 요청하십시오.")
+                st.error(f"❌ **Critical Unbalance**\n\n허용 범위를 초과했습니다. 진동으로 인한 베어링 손상이 우려되오니 즉시 정밀 최적화 배열이 필요합니다..")
             elif 1.0 <= mag <= 10.0:
                 st.warning(f"⚠️ **Attention Required**\n\n현재 수치는 가동 가능 범위이나, 정밀 최적화를 통해 잔류 언밸런스를 1.0 이하로 개선하여 설비 안정성을 높일 수 있습니다.")
             else:
